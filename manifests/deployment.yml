@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: sugampipelinesjavascriptdocker 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: sugampipelinesjavascriptdocker
+  template:
+    metadata:
+      labels:
+        app: sugampipelinesjavascriptdocker 
+    spec:
+      containers:
+        - name: sugampipelinesjavascriptdocker 
+          image: mycontainerregistry192.azurecr.io/sugampipelinesjavascriptdocker
+          ports:
+          - containerPort: 8080
