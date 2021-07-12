@@ -14,7 +14,7 @@ variables:
   dockerRegistryServiceConnection: '0d6d89fc-fce8-49f3-839e-bdcd6b0577db'
   imageRepository: 'sugampipelinesjavascriptdocker'
   containerRegistry: 'mycontainerregistry192.azurecr.io'
-  dockerfilePath: '**/Dockerfile'
+  dockerfilePath: 'app/Dockerfile'
   tag: '$(Build.BuildId)'
   imagePullSecret: 'mycontainerregistry1929c64-auth'
 
