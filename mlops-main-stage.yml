@@ -6,5 +6,7 @@ stages:
   - job: A
     steps:
     - bash: echo "Triggered from template"
+    - checkout: MlOps
+    - script: echo $(Build.SourceBranch)
       
     
