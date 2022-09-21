@@ -1,10 +1,10 @@
 stages:
-  - stage: mlops_deploy_code_dev
-    condition: eq(variables['Build.Reason'], 'PullRequest')
-    displayName: mlops_deploy_code_dev
-    jobs:
-    - job: A
-      steps:
-      - bash: echo "Triggered from template"
+- stage: mlops_deploy_code_dev
+  condition: eq(variables['Build.Reason'], 'PullRequest')
+  displayName: mlops_deploy_code_dev
+  jobs:
+  - job: A
+    steps:
+    - bash: echo "Triggered from template"
       
     
